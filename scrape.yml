@@ -1,0 +1,15 @@
+name: Scrape PeoplePerHour
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Runs every 30 minutes
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run scraping script
+        run: python your_script.py

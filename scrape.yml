@@ -13,3 +13,8 @@ jobs:
 
       - name: Run scraping script
         run: python your_script.py
+
+        git add .github/workflows/scrape.yml
+git commit -m "Add GitHub Actions workflow for scraping"
+git push
+
